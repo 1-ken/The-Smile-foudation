@@ -17,14 +17,14 @@ export default function Header() {
             onClick={() => navigate("/")}
             src={logo}
             alt="logo"
-            className="h-[100px] cursor-pointer rounded-full"
+            className="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 2xl:h-28 cursor-pointer rounded-full"
           />
         </div>
         <div>
-          <ul className="flex space-x-10">
+          <ul className="flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 2xl:space-x-14">
             <li
               onClick={() => navigate("/")}
-              className={`cursor-pointer py-3 font-bold text-2xl  text-[#FFD700] border-b-[3px] border-b-transparent ${
+              className={`cursor-pointer py-2 md:py-3 font-bold text-base md:text-lg lg:text-xl xl:text-2xl text-[#FFD700] border-b-[3px] border-b-transparent ${
                 pathMatchRoute("/") && "text-black border-b-white"
               }`}
             >
@@ -32,7 +32,7 @@ export default function Header() {
             </li>
             <li
               onClick={() => navigate("/about-us")}
-              className={`cursor-pointer py-3 font-bold text-2xl  text-[#FFD700] border-b-[3px] border-b-transparent ${
+              className={`cursor-pointer py-2 md:py-3 font-bold text-base md:text-lg lg:text-xl xl:text-2xl text-[#FFD700] border-b-[3px] border-b-transparent ${
                 pathMatchRoute("/about-us") && "text-black border-b-white"
               }`}
             >
@@ -40,7 +40,7 @@ export default function Header() {
             </li>
             <li
               onClick={() => navigate("/programs")}
-              className={`cursor-pointer py-3 font-bold text-2xl  text-[#FFD700] border-b-[3px] border-b-transparent ${
+              className={`cursor-pointer py-2 md:py-3 font-bold text-base md:text-lg lg:text-xl xl:text-2xl text-[#FFD700] border-b-[3px] border-b-transparent ${
                 pathMatchRoute("/programs") && "text-black border-b-white"
               }`}
             >
@@ -48,7 +48,7 @@ export default function Header() {
             </li>
             <li
               onClick={() => navigate("/donate")}
-              className={`cursor-pointer py-3 font-bold text-2xl  text-[#FFD700] border-b-[3px] border-b-transparent ${
+              className={`cursor-pointer py-2 md:py-3 font-bold text-base md:text-lg lg:text-xl xl:text-2xl text-[#FFD700] border-b-[3px] border-b-transparent ${
                 pathMatchRoute("/donate") && "text-black border-b-white"
               }`}
             >
