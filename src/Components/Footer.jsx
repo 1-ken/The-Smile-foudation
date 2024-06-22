@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -11,23 +12,20 @@ export default function Footer() {
             <div className="text-center md:text-left">
               <h1 className="text-lg md:text-xl lg:text-2xl font-bold">NAVIGATION</h1>
               <ul className="mt-2 space-y-1 text-base md:text-lg lg:text-xl">
-                <li className="text-[#FFD700]">Home</li>
-                <li className="text-[#FFD700]">About Us</li>
-                <li className="text-[#FFD700]">Donate</li>
-                <li className="text-[#FFD700]">Contact</li>
+                <Link to="/"><li className="text-[#FFD700]">Home</li></Link>
+                <Link to="/about-us"><li className="text-[#FFD700]">About Us</li></Link>
+                {/*<li className="text-[#FFD700]">Donate</li>*/}
               </ul>
             </div>
             <div className="text-center md:text-left">
               <h1 className="text-lg md:text-xl lg:text-2xl font-bold">Contact Us</h1>
               <p className="mt-2 text-base md:text-lg lg:text-xl">
-                For all inquiries use contact@thislooksgreat.com or head over to
+                For all inquiries use foundationthesmiles@gmail.com  or head over to
                 <br className="hidden md:block" />
-                our Contact page and send us a message
+                our instagram and send us a message
               </p>
               <div className="flex justify-center md:justify-start gap-x-4 mt-4">
-                <FaWhatsapp className="w-6 h-6 md:w-8 md:h-8" />
-                <FaFacebookF className="w-6 h-6 md:w-8 md:h-8" />
-                <FaInstagram className="w-6 h-6 md:w-8 md:h-8" />
+                <a href="https://www.instagram.com/thesmilesfoundation.ke?utm_source=qr&igsh=MTEyMG8yeDZzdTJnbg==" target="_blank" rel="noopener noreferrer"><FaInstagram className="w-6 h-6 md:w-8 md:h-8" /></a>
                 <FaXTwitter className="w-6 h-6 md:w-8 md:h-8" />
               </div>
             </div>
