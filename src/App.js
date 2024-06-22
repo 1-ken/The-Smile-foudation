@@ -3,6 +3,7 @@ import Programs from "./pages/Programs";
 import AboutUs from "./pages/AboutUs";
 import Donate from "./pages/Donate";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/donate" element={<Donate />} />
         </Routes>
+      <Footer/>
       </Router>
     </>
   );

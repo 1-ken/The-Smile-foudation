@@ -38,22 +38,6 @@ export default function Header() {
             >
               About us
             </li>
-            <li
-              onClick={() => navigate("/programs")}
-              className={`cursor-pointer py-2 md:py-3 font-bold text-base md:text-lg lg:text-xl xl:text-2xl text-[#FFD700] border-b-[3px] border-b-transparent ${
-                pathMatchRoute("/programs") && "text-black border-b-white"
-              }`}
-            >
-              Programs
-            </li>
-            <li
-              onClick={() => navigate("/donate")}
-              className={`cursor-pointer py-2 md:py-3 font-bold text-base md:text-lg lg:text-xl xl:text-2xl text-[#FFD700] border-b-[3px] border-b-transparent ${
-                pathMatchRoute("/donate") && "text-black border-b-white"
-              }`}
-            >
-              Donate
-            </li>
           </ul>
         </div>
       </header>
