@@ -27,10 +27,10 @@ export default function Footer() {
               <h1 className="text-lg md:text-xl lg:text-2xl font-bold">
                 Contact Us
               </h1>
-              <p className="mt-2 text-base md:text-lg lg:text-xl">
+              <p className="mt-2 text-[#FFD700] text-base md:text-lg lg:text-xl">
                 For all inquiries use foundationthesmiles@gmail.com or head over
                 to
-                <br className="hidden md:block" />
+                <br className="hidden text-[#FFD700] md:block" />
                 our instagram and send us a message
               </p>
               <div className="flex justify-center md:justify-start gap-x-4 mt-4">
@@ -39,7 +39,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaInstagram className="w-6 h-6 md:w-8 md:h-8" />
+                  <FaInstagram className=" w-6 h-6 md:w-8 md:h-8" />
                 </a>
                 <FaXTwitter className="w-6 h-6 md:w-8 md:h-8" />
               </div>
