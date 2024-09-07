@@ -47,12 +47,12 @@ export default function Header() {
               Programs
             </li>
             <li
-              onClick={() => navigate("/donate")}
+              onClick={() => navigate("/sign-in")}
               className={`cursor-pointer py-2 md:py-3 font-bold text-base md:text-lg lg:text-xl xl:text-2xl text-[#FFD700] border-b-[3px] border-b-transparent ${
-                pathMatchRoute("/donate") && "text-black border-b-white"
+                pathMatchRoute("/sign-in") && "text-black border-b-white"
               }`}
             >
-              Donate
+              Sign in
             </li>
           </ul>
         </div>

@@ -5,6 +5,12 @@ import Donate from "./pages/Donate";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import ForgotPassword from "./pages/ForgotPassword";
+
 function App() {
   return (
     <>
@@ -15,9 +21,24 @@ function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/sign-in" element={<Signin />} />
+          <Route path="/sign-up" element={<Signup/>} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
       <Footer/>
       </Router>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </>
   );
 }
