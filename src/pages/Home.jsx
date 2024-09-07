@@ -15,12 +15,10 @@ export default function Home() {
           </p>
         </div>
         <div className="absolute inset-x-0 top-20 md:top-24 lg:top-28 transform flex justify-center space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 2xl:space-x-14 px-4 md:px-8">
-          <button className="bg-red-600 text-[#FFD700] px-7 py-2 text-sm font-medium uppercase rounded shadow-md hover:bg-red-900 transition duration-150 ease-in-out hover:shadow-lg">
+          <a href="https://forms.gle/P2fa57oLKhxAhtMEA" target="_blank" rel="noopener noreferrer"><button className="bg-red-600 text-[#FFD700] px-7 py-2 text-sm font-medium uppercase rounded shadow-md hover:bg-red-900 transition duration-150 ease-in-out hover:shadow-lg">
             Volunteer
-          </button>
-          <button className="bg-red-600 text-[#FFD700] px-7 py-2 text-sm font-medium uppercase rounded shadow-md hover:bg-red-900 transition duration-150 ease-in-out hover:shadow-lg">
-            Donate
-          </button>
+          </button></a>
+          
         </div>
       </div>
       <div className="max-w-6xl mx-auto mt-8 px-4 bg-[#FFF8DC] shadow-lg rounded-sm">
