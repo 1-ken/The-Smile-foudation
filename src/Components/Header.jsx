@@ -1,7 +1,19 @@
-import React from "react";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import React, { useEffect, useState } from "react";
 import logo from "./logo.png";
 import { useLocation, useNavigate } from "react-router-dom";
 export default function Header() {
+  const [pageState, setPageState] = useState();
+  const auth = getAuth();
+  useEffect(() => {
+    onAuthStateChanged(auth,(user)=>{
+      if(user){
+        setPageState("Profile")
+      }else{
+        setPageState("Sign In")
+      }
+    });
+  });
   const navigate = useNavigate();
   const location = useLocation();
   function pathMatchRoute(route) {
@@ -9,6 +21,7 @@ export default function Header() {
       return true;
     }
   }
+
   return (
     <div className="bg-[#FF0000] border-b shadow-sm sticky top-0 z-40">
       <header className="flex justify-between items-center px-3 max-w-6xl mx-auto">
@@ -47,12 +60,12 @@ export default function Header() {
               Programs
             </li>
             <li
-              onClick={() => navigate("/sign-in")}
+              onClick={() => navigate("/profile")}
               className={`cursor-pointer py-2 md:py-3 font-bold text-base md:text-lg lg:text-xl xl:text-2xl text-[#FFD700] border-b-[3px] border-b-transparent ${
-                pathMatchRoute("/sign-in") && "text-black border-b-white"
+                pathMatchRoute("/sign-in")||pathMatchRoute("/profile") && "text-black border-b-white"
               }`}
             >
-              Sign in
+              {pageState}
             </li>
 
           </ul>
