@@ -6,11 +6,11 @@ export default function Header() {
   const [pageState, setPageState] = useState();
   const auth = getAuth();
   useEffect(() => {
-    onAuthStateChanged(auth,(user)=>{
-      if(user){
-        setPageState("Profile")
-      }else{
-        setPageState("Sign In")
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setPageState("Profile");
+      } else {
+        setPageState("Sign In");
       }
     });
   });
@@ -62,12 +62,12 @@ export default function Header() {
             <li
               onClick={() => navigate("/profile")}
               className={`cursor-pointer py-2 md:py-3 font-bold text-base md:text-lg lg:text-xl xl:text-2xl text-[#FFD700] border-b-[3px] border-b-transparent ${
-                pathMatchRoute("/sign-in")||pathMatchRoute("/profile") && "text-black border-b-white"
+                pathMatchRoute("/sign-in") ||
+                (pathMatchRoute("/profile") && "text-black border-b-white")
               }`}
             >
               {pageState}
             </li>
-
           </ul>
         </div>
       </header>
