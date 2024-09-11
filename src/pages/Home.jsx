@@ -21,7 +21,7 @@ export default function Home() {
           
         </div>
       </div>
-      <div className="max-w-6xl mx-auto mt-8 px-4 bg-[#FFF8DC] shadow-lg rounded-sm">
+      <div className=" max-w-screen mx-auto mt-8 px-4 bg-[#FFF8DC] shadow-lg rounded-sm">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-[#000000] font-bold text-center">MISSION</h1>
         <p className="mt-4 text-base md:text-lg lg:text-xl xl:text-2xl text-black-700 text-center">
           Our mission is to bring smiles to those who are struggling and to fill
